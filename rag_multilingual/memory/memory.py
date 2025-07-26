@@ -1,4 +1,4 @@
-from config.settings import SHORT_TERM_MEMORY_SIZE
+from ..config.settings import SHORT_TERM_MEMORY_SIZE
 
 
 class Memory:

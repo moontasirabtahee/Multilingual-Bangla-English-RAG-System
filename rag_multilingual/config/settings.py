@@ -1,6 +1,6 @@
 import os
 
-DATA_DIR = os.environ.get("RAG_DATA_DIR", "data")
+DATA_DIR = os.environ.get("RAG_DATA_DIR", "D:\\RAG10MinSchool\\rag_multilingual\\data")
 PDF_PATH = os.path.join(DATA_DIR, "HSC26-Bangla1st-Paper.pdf")
 EXTRACTED_TEXT_PATH = os.path.join(DATA_DIR, "extracted_text.txt")
 TRANSLATED_TEXT_PATH = os.path.join(DATA_DIR, "translated_text.txt")

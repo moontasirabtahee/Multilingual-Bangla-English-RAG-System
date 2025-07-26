@@ -1,6 +1,6 @@
 import numpy as np
 import faiss
-import config.settings as settings
+from ..config import settings
 
 
 def build_faiss_index(chunk_embeddings):

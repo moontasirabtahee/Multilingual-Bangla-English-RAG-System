@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from sentence_transformers import SentenceTransformer
-import config.settings as settings
-
+from ..config import settings
 _model = None
 
 def get_model():
