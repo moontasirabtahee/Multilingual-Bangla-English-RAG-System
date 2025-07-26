@@ -224,17 +224,6 @@ The `rag_multilingual/api/` folder implements a Flask REST API with the followin
 - **LLM Accuracy**: Models may misinterpret context in rare cases, though Qwen3-32b was highly accurate.
 - **Compute Resources**: FAISS and embedding generation may be slow on Colab's free tier.
 
-## Contributing
-Contributions are welcome! Please:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature`.
-3. Commit changes: `git commit -m 'Add your feature'`.
-4. Push to the branch: `git push origin feature/your-feature`.
-5. Open a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 - Built with [LangChain](https://langchain.com), [Sentence Transformers](https://www.sbert.net/), [FAISS](https://github.com/facebookresearch/faiss), [Groq](https://groq.com), and [Flask](https://flask.palletsprojects.com/).
-- Inspired by the need for accessible Bengali NLP tools.
+
