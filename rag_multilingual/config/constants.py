@@ -1,0 +1,2 @@
+LANG_BENGALI = "ben"
+LANG_ENGLISH = "en"

@@ -1,0 +1,12 @@
+flask
+pdf2image
+pytesseract
+deep_translator
+langchain-community
+langchain
+faiss-cpu
+sentence-transformers
+groq
+scikit-learn
+matplotlib
+requests
