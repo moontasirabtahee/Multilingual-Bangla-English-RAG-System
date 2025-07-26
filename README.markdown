@@ -1,6 +1,5 @@
 # Multilingual Bangla-English RAG System
 
-![GitHub](https://img.shields.io/github/license/moontasirabtahee/Multilingual-Bangla-English-RAG-System)
 ![GitHub last commit](https://img.shields.io/github/last-commit/moontasirabtahee/Multilingual-Bangla-English-RAG-System)
 
 This repository contains a comprehensive implementation of a Retrieval-Augmented Generation (RAG) system designed for processing scanned Bengali PDFs and answering questions in Bangla and English. The project includes a Jupyter Notebook (`Exeriments_10MinSchool_RAG_System.ipynb`) for experimentation and a modular, industry-standard pipeline in the `rag_multilingual` folder, optimized with the Qwen3-32b model for production use. The system focuses on the Bengali text "অপরিচিতা" (Aparichita) and supports OCR, translation, chunking, embedding, vector search, and question answering.
