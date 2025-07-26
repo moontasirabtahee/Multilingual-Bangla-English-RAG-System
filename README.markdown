@@ -1,6 +1,5 @@
 # Multilingual Bangla-English RAG System
 
-![GitHub](https://img.shields.io/github/license/moontasirabtahee/Multilingual-Bangla-English-RAG-System)
 ![GitHub last commit](https://img.shields.io/github/last-commit/moontasirabtahee/Multilingual-Bangla-English-RAG-System)
 
 This repository contains a comprehensive implementation of a Retrieval-Augmented Generation (RAG) system designed for processing scanned Bengali PDFs and answering questions in Bangla and English. The project includes a Jupyter Notebook (`Exeriments_10MinSchool_RAG_System.ipynb`) for experimentation and a modular, industry-standard pipeline in the `rag_multilingual` folder, optimized with the Qwen3-32b model for production use. The system focuses on the Bengali text "অপরিচিতা" (Aparichita) and supports OCR, translation, chunking, embedding, vector search, and question answering.
@@ -184,32 +183,7 @@ The `rag_multilingual/api/` folder implements a Flask REST API with the followin
 | `/health` | GET | Checks API server status. | None |
 | `/query` | POST | Submits a query and returns an answer. | `query` (str), `keyword` (str, optional) |
 
-**Example Request**:
-```bash
-curl -X POST http://localhost:5000/query -H "Content-Type: application/json" -d '{"query": "অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?", "keyword": "শস্তুনাথ"}'
-```
 
-**Example Response**:
-```json
-{
-  "query": "অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?",
-  "answer": "শস্তুনাথ বাবু",
-  "groundedness_score": 0.95,
-  "relevance_score": 0.92
-}
-```
-
-## Evaluation Metrics
-
-The `rag_multilingual/evaluation/` module computes:
-- **Groundedness Score**: Cosine similarity between answer and context embeddings.
-- **Relevance Score**: Average FAISS similarity score of retrieved chunks.
-
-| **Question** | **Groundedness Score (Qwen3-32b)** | **Relevance Score** |
-|--------------|------------------------------------|---------------------|
-| সুপুরুষ কাকে বলা হয়েছে? | 0.95 | 0.92 |
-| ভাগ্য দেবতা কে? | 0.95 | 0.92 |
-| কল্যাণীর বয়স? | 0.98 | 0.96 |
 
 ## Technical Questions and Answers
 
